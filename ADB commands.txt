@@ -1,0 +1,9 @@
+ Посмотреть список подключенных устройств  - adb devices
+ Просмотр логов с определенного устройства - adb -s 123456789ABCD logcat
+ Запись логов в файл                       - adb logcat -d > /android.log
+ Очистить все логи с утройства             - adb logcat -c
+ Установка приложения                      - adb install /todolist_1.apk
+ Удаление приложения                       - adb uninstall com.android.todolist
+ Перезагрузка устройства                   - adb reboot
+
+ 
