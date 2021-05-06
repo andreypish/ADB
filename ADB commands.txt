@@ -1,9 +1,11 @@
  Посмотреть список подключенных устройств  - adb devices
  Просмотр логов с определенного устройства - adb -s 123456789ABCD logcat
- Запись логов в файл                       - adb logcat -d > /android.log
+ Просмотр логов конкретного приложения     - adb logcat | grep -rnw "com.android.todolist"
+ Запись логов в файл                       - adb logcat | grep -rnw "com.android.todolist" > /Users/andrey/crash.log
  Очистить все логи с утройства             - adb logcat -c
  Установка приложения                      - adb install /todolist_1.apk
  Удаление приложения                       - adb uninstall com.android.todolist
  Перезагрузка устройства                   - adb reboot
-
  
+ Подключение девайса по Wi-fi              - adb tcpip 5555
+                                           - adb connect 192.168.0.103
